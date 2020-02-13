@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+    <title>Trouvez votre emploi sur météojob</title>
+</head>
+<body>
+  <main>
+    <header>
+        <img src="https://media.meteojob.com/theme/2.3/images/logo-white.png?201802221640&f23d2ac508759791af3dee5079074976acb27b71" alt="logo de meteo job">
+        <h1>Creez votre profil Meteojob</h1>
+    </header>
+    <form method="post">
+
+        <!-- 1st field: nom et prenom -->
+        <div class="container bloc-1">
+            <div class="content__field">
+                <label for="surname"><b>Prénom</b></label>
+                <input type="text" placeholder="Votre prenom" id="surname" required/>
+            </div>
+
+            <div class="content__field">
+                <label for="name"><b>Nom</b></label>
+                <input type="text" placeholder="Votre nom" id="name" required/>
+            </div>
+        </div>
+
+        <!--mail -->
+        <div class="content__field bloc-1">
+            <label for="email"><b>Adresse e-mail</b></label>
+            <input type="email" id="email" placeholder="Votre adresse e-mail" required/>
+        </div>
+
+        <!--password -->
+
+        <div class="content__field bloc-1">
+            <label for="password"><b>Mot de passe</b></label>
+        </div>
+        <div class="input_eye"><input type="password" id="password" placeholder="Choisissez votre mot de passe" required/>
+            <img src="assets/img/eye.png" alt="eye password" width="20"></div>
+
+        <!-- works questing ... -->
+
+        <div class="content__field bloc-1">
+            <label for="job"><b>Postes recherchés</b></label>
+            <input type="text" placeholder="Ex: Chef de projet,cuisinier" id="job" required/>
+        </div>
+
+        <!-- work place -->
+
+        <div class="content__field bloc-1">
+            <label for="place"><b>Où souhaitez-vous travailler ?</b></label>
+            <input type="text" placeholder="Ex: Essonne, Nantes, Bretagne..." id="place" required/>
+        </div>
+
+        <!--contracts types -->
+        <label>Types de contrats recherchés</label>
+
+        <div class="contract_types">
+            <label class="cdi">CDI</label>
+            <input type="checkbox" name="contract" value="cdi" checked required/>
+            <input type="checkbox" name="contract" value="cdd" />
+            <label>CDD</label>
+            <input type="checkbox" name="contract" value="independant" />
+            <label> <span>Indépendant / Franchise</span></label>
+            <input type="checkbox" name="contract" value="interim" />
+            <label>Intérim</label>
+            <input type="checkbox" name="contract" value="stage" />
+            <label>Stage</label>
+            <input type="checkbox" name="contract" id="" value="alternance" />
+            </label>
+            <label><span>Alternance / Apprentissage</span></label>
+            <p><a href="#">+ de types de contrat</a></p>
+        </div>
+        <!--end contracts types-->
+
+        <!-- using requirement start -->
+
+        <div class="term_du_contrat">
+            <span>
+                j'accepte les<a href="#">conditions générales</a>pour creer mon compte,<br> bénéficier des services de matching et de postuler aux offres : 
+            </span>
+
+            <div>
+                <span class="bouton_oui_non">
+                    <input type="checkbox" name="term_of_use" id="term" value="yes" required data-parsley-error-message="Vous devez accepter nos conditions d'utilisation pour créer votre profil."/>
+
+                    <label for="term" class="btn__accepted">
+                        OUI
+                    </label>
+
+                    <label for="term" class="btn__refused">
+                        NON
+                    </label>
+                </span>
+            </div>
+
+        </div>
+        <input type="submit" value="Continuer"/>
+        <!--end using requirement-->
+
+    </form>
+  </main>
+</body>
+</html>

@@ -1,0 +1,205 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url('https://media.meteojob.com/theme/2.3/images/bg-clouds.png'),linear-gradient(to top,#6cc2eb,#1299d8);
+    height: 100vh;
+    font-family: 'Open Sans',Arial, Helvetica, sans-serif;
+}
+
+main{
+    width: 45%;
+    margin: auto;
+}
+
+.bloc-1{
+    margin-bottom: 1.2em;
+}
+
+form{
+    background-color: #ffffff;
+    padding: 2em;
+    margin-bottom: 1em;
+    border-radius: 4px;
+}
+
+label,input{
+    /*display: block;*/
+}
+
+header{
+    text-align: center;
+}
+h1{
+    font-family: 'Poiret One', cursive;
+    color: #ffffff;
+    margin-bottom: 20px;
+    margin-top: 0;
+    text-align: center;
+    font-size: 1.312em;
+    font-weight: 400;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 4%;
+    margin-bottom: 15px;
+}
+
+.content__field > label{
+    font-size: .875rem;
+    font-family: 'Open Sans',Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: #16354e;
+    margin-bottom: 4px;
+    justify-content: space-around;
+}
+
+.content__field > input{
+    width: 100%;
+    /*border:1px solid #bbb8b87a;*/
+    box-sizing: border-box;
+    padding: 10px 9px;
+    justify-content: space-around;
+}
+
+.content__field > input::placeholder{
+    font-family: var(--font-label);
+    color: #919396;
+    font-size: 1.1em;
+}
+
+.input_eye{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #bbb8b87a;
+    box-sizing: border-box;
+    padding: 10px 9px;
+}
+.input_eye > input{
+    border: none;
+    outline: none;
+    flex: 2px;
+}
+.input_eye > img{
+    color: #5f5d5dec;
+}
+
+h2{
+    font-size: .9em;
+    color: #272525da;
+}
+
+.contract_types{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contract_types > label{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 5px;
+    font-size: .8em;
+    margin: 5px;
+    background-color: #f2f2f2;
+    color: #16354e;
+    cursor: pointer;
+}
+.contract_types > .cdi{
+    background-color: #3498db;
+    color: #ffffff;
+}
+
+.contract_types > label > span{
+    display: flex;
+    justify-content: center;
+    margin: 10%;
+    
+}
+
+.plus{
+    line-height: 46px;
+    opacity: .8;
+    cursor: pointer;
+}
+
+.contract__types > label > span{
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.term_du_contrat{
+    display: flex;
+}
+
+.term_du_contrat > span{
+    display: inline-block;
+    width: 80%;
+    color: #16354e;
+    font-family:'Open Sans',Arial, Helvetica, sans-serif;
+    font-size: .875em;
+    font-weight: 600;
+}
+
+.term_du_contrat > span > a{
+    color: #16354e;
+}
+
+.bouton_oui_non{
+    position: absolute;
+    margin-left: 20px;
+    align-items: center;
+    border: 1px solid #dce1e4;
+    border-top-right-radius: 0;
+    border-top-left-radius: 6%;
+    border-bottom-left-radius: 6px;
+    background-color: #f0f4f7;
+    padding: 10px;
+}
+
+.bouton_oui_non label{
+    padding: 2px;
+    font-family: var(--font-label);
+    color: transparent;
+}
+
+#term:not(:checked) ~ .btn__refused{
+    background-color: #919396;
+    color: #ffffff;
+    height: 30px;
+}
+
+#term:checked ~ .btn__accepted{
+    background-color: #0964ee;
+    color: #ffffff;
+}
+
+
+input[type="submit"]{
+    display: flex;
+    margin: 6px auto;
+    padding: 10px 25px;
+    color: #ffffff;
+    background-color: #0964ee;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    font-size: .9em;
+}
+
+button {
+    background: grey;
+    border: 1px solid silver;
+    padding: 2px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
