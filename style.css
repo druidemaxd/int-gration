@@ -168,43 +168,61 @@ h2{
     color: gray;
 }
 
-.bouton_oui_non{
-    position: absolute;
-    /* border: 1px solid grey; */
-    margin-left: 10px;
-    align-items: center;
-    /* border-radius: 15px; */
-    /* border: 1px solid #dce1e4; */
-    /* border-top-right-radius: 0;
-    border-top-left-radius: 6%;
-    border-bottom-left-radius: 6px; */
-    background-color: #f0f4f7;
-    padding: 5px;
-    border: 5px;
+/* .bouton_ouinon{
+    display: flex;
+    flex-direction:row;
+    margin-left: 40px;
+    margin-top: 10px;
 }
+.non{
+    color: white;
+    background-color:#b9c2ca;
+    height: 20px;
+    width: 57px; 
+    padding: 10px 15px 30px;
+    text-align:center;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius:5px;
+    padding-bottom: 25px;
+}
+.oui{
+    color: #ffffff;
+    background-color:#fff;
+    height: 10px;
+    width: 50px;
+    padding: 10px 15px;
+    text-align: center;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-bottom: 25px;
+} */
 
-.bouton_oui_non label{
-    padding: 5px;
+.bouton_ouinon{
+    display: flex;
+    align-items: center;
+    /* border-radius: 4px; */
+    color: #919396;
+    overflow: hidden;
+    padding: 30px;
+}
+.bouton_ouinon label{
+    display: inline-block;
+    padding: 2px;
     font-family: var(--font-label);
     color: transparent;
-    transition: 0.5s;
-    /* border-radius: 20px; */
+    transition: 0.2s;
+    border-radius: 5px;
+    /* border: 1px solid #dce1e4; */
 }
-
-#term:not(:checked) ~ .btn__refused{
+#term:not(:checked) ~ .button__refused{
     background-color: #919396;
-    color: #f0f4f7;
-    /* height: 5px; */
-    border-radius: 7px;
-    /* border: 1px solid beige; */
+    color: #ffffff;
 }
-
-#term:checked ~ .btn__accepted{
+#term:checked ~ .button__accepted{
     background-color: #0964ee;
     color: #ffffff;
-    /* height: 10px; */
-    border-radius: 7px;
-    /* border: 1px solid grey; */
 }
 
 
