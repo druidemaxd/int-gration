@@ -37,6 +37,7 @@ h1{
 
 input[type="checkbox"]{
     display: none;
+    color: #03224c;
 }
 
 .container{
@@ -50,7 +51,7 @@ input[type="checkbox"]{
     font-size: .875rem;
     font-family: 'Open Sans',Arial, Helvetica, sans-serif;
     font-weight: 600;
-    color: #16354e;
+    color: #5b7182;
     margin-bottom: 4px;
     margin-top: 10%;
     color: #808080;
@@ -168,37 +169,6 @@ h2{
     color: gray;
 }
 
-/* .bouton_ouinon{
-    display: flex;
-    flex-direction:row;
-    margin-left: 40px;
-    margin-top: 10px;
-}
-.non{
-    color: white;
-    background-color:#b9c2ca;
-    height: 20px;
-    width: 57px; 
-    padding: 10px 15px 30px;
-    text-align:center;
-    border: none;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius:5px;
-    padding-bottom: 25px;
-}
-.oui{
-    color: #ffffff;
-    background-color:#fff;
-    height: 10px;
-    width: 50px;
-    padding: 10px 15px;
-    text-align: center;
-    border: none;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    padding-bottom: 25px;
-} */
-
 .bouton_ouinon{
     display: flex;
     align-items: center;
@@ -213,7 +183,7 @@ h2{
     font-family: var(--font-label);
     color: transparent;
     transition: 0.2s;
-    border-radius: 5px;
+    border-radius: 1px 4px 4px 1px;
     /* border: 1px solid #dce1e4; */
 }
 #term:not(:checked) ~ .button__refused{
@@ -238,6 +208,8 @@ input[type="submit"]{
     font-size: .9em;
     margin-top: 30px;
     cursor: pointer;
+    font-size: 1.1249875rem;
+    line-height: 1.3333333;
 }
 
 button {
